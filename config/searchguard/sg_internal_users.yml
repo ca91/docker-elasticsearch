@@ -1,15 +1,13 @@
 elastic.hash: changeme
 elastic.roles:
-        - admin
+    - admin
 
-kibana.hash: changeme
-kibana.roles:
-        - kibana_user
+superadmin.hash: superadmin
+superadmin.roles:
+    - admin
 
-logstash.hash: changeme
-logstash.roles:
-        - logstash_user
-
-beats.hash: changeme
-beats.roles:
-        - beats_user
+kibanaserver:
+    hash: $2a$12$4AcgAt3xwOWadA5s5blL6ev39OXDNhmOesEoo33eZtrq2N0YrU3H.
+    #password is: kibanaserver
+kibanaserver.roles:
+    - kibana_user

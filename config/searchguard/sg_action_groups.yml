@@ -33,10 +33,14 @@ CLUSTER_INFO:
   - "cluster:monitor/nodes/info"
 CLUSTER_HEALTH:
   - "cluster:monitor/health"
+CLUSTER_MAIN:
+  - "cluster:monitor/main"
 
 MONITOR:
   - CLUSTER_INFO
   - CLUSTER_HEALTH
+  - CLUSTER_MAIN
+
 
 # SUPER POWERS
 ALL:
