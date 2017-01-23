@@ -31,5 +31,14 @@ RUN mkdir -p /.backup/elasticsearch/ \
 ADD ./src/ /run/
 RUN chmod +x -R /run/
 
+RUN chmod +x /usr/share/elasticsearch/plugins/search-guard-5/tools/sgadmin.sh
+
+#RUN /usr/share/elasticsearch/plugins/search-guard-5/tools/sgadmin.sh \
+#-cd /usr/share/elasticsearch/plugins/search-guard-5/sgconfig/ \
+#-ks /usr/share/elasticsearch/config/searchguard/ssl/node-0-keystore.jks \
+#-kspass changeme \
+#-ts /usr/share/elasticsearch/config/searchguard/ssl/truststore.jks -nhnv \
+#-tspass changeme
+
 ENTRYPOINT ["/run/entrypoint.sh"]
 CMD ["elasticsearch"]

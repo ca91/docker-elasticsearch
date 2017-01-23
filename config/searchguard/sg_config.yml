@@ -1,15 +1,3 @@
-#searchguard:
-#  dynamic:
-#    authc:
-#      basic_internal_auth:
-#        enabled: true
-#        order: 1
-#        http_authenticator:
-#          type: basic
-#          challenge: true
-#        authentication_backend:
-#          type: internal
-
 searchguard:
   dynamic:
     http:
